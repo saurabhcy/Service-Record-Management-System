@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Salary Management</title>
+
+    <link rel="stylesheet" href="/css/dashboard.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+
+    <div class="sidebar">
+
+        <div class="logo">
+
+            <h2>RailHR</h2>
+
+            <p>Northern Railway</p>
+
+        </div>
+
+        <ul>
+
+            <li><a href="/pages/hr-dashboard.html">Dashboard</a></li>
+
+            <li><a href="/pages/employees.html">Employees</a></li>
+
+            <li><a href="/pages/service-record.html">Service Record</a></li>
+
+            <li><a href="/pages/salary.html">Salary Management</a></li>
+
+            <li>Leave Management</li>
+
+            <li><a href="/pages/new-onboarding.html">New Onboarding</a></li>
+
+        </ul>
+
+    </div>
+
+
+    <!-- Main -->
+
+    <div class="main">
+
+        <div class="top">
+
+            <h1>Salary Management</h1>
+
+        </div>
+
+        <div class="search-box">
+
+            <select id="searchType">
+
+                <option value="name">Employee Name</option>
+
+                <option value="employeeId">Employee ID</option>
+
+                <option value="billUnit">Bill Unit</option>
+
+            </select>
+
+            <input
+                type="text"
+                id="searchValue"
+                placeholder="Search Employee">
+
+            <button id="searchBtn">
+
+                Search
+
+            </button>
+
+        </div>
+
+        <hr>
+
+        <h2>Employee Information</h2>
+
+        <p><b>Name :</b> <span id="employeeName">--</span></p>
+
+        <p><b>Employee ID :</b> <span id="employeeId">--</span></p>
+
+        <p><b>Designation :</b> <span id="designation">--</span></p>
+
+        <p><b>Bill Unit :</b> <span id="billUnit">--</span></p>
+
+        <p><b>Basic Pay :</b> ₹ <span id="basicPay">--</span></p>
+
+        <p><b>Pay Level :</b> <span id="payLevel">--</span></p>
+
+        <hr>
+
+        <h2>Salary</h2>
+
+        <h3>
+
+            Net Salary :
+
+            ₹ <span id="netSalary">--</span>
+
+        </h3>
+
+        <br>
+
+        <label>
+
+            Select Month
+
+        </label>
+
+        <input
+            type="month"
+            id="salaryMonth">
+
+        <br><br>
+
+        <button id="generateSlip">
+
+            Generate Payslip
+
+        </button>
+
+    </div>
+
+</div>
+
+<script src="/js/salary.js"></script>
+
+</body>
+
+</html>

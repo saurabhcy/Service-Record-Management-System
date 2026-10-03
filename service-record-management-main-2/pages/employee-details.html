@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Details</title>
+     
+    <link rel="stylesheet" href="/css/dashboard.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+
+    <div class="sidebar">
+
+        <div class="logo">
+            <h2>RailHR</h2>
+            <p>Northern Railway</p>
+        </div>
+
+        <ul>
+            <li><a href="/dashboard">Dashboard</a></li>
+            <li><a href="/pages/employees.html">Employees</a></li>
+            <li><a href="/pages/service-record.html">Service Record</a></li>
+            <li><a href="/pages/salary.html">Salary</a></li>
+            <li><a href="/pages/leave.html">Leave</a></li>
+            <li><a href="/pages/new-onboarding.html">New Onboarding</a></li>
+        </ul>
+
+    </div>
+
+    <!-- Main -->
+
+    <div class="main">
+
+        <div class="page-header">
+
+            <h1>Employee Details</h1>
+
+            <div>
+                <button>Edit</button>
+                <button>Back</button>
+            </div>
+
+        </div>
+
+
+        <!-- Employee Header -->
+
+        <section>
+
+            <h2>Employee Information</h2>
+
+            <p><strong>Employee Name :</strong> <span id="employeeName">--</span></p>
+
+            <p><strong>Employee ID :</strong> <span id="employeeId">--</span></p>
+
+            <p><strong>Status :</strong> <span id="status">--</span></p>
+
+        </section>
+
+        <hr>
+
+        <!-- Personal Details -->
+
+        <section>
+
+            <h2>Personal Details</h2>
+
+            <p><strong>Date of Birth :</strong> <span id="dob">--</span></p>
+
+            <p><strong>Gender :</strong> <span id="gender">--</span></p>
+
+            <p><strong>Employee Type :</strong> <span id="employeeType">--</span></p>
+
+            <p><strong>PAN Number :</strong> <span id="pan">--</span></p>
+
+            <p><strong>Aadhaar Number :</strong> <span id="aadhaar">--</span></p>
+
+            <p><strong>Mobile Number :</strong> <span id="mobile">--</span></p>
+
+            <p><strong>Email :</strong> <span id="email">--</span></p>
+
+        </section>
+
+        <hr>
+
+        <!-- Employment -->
+
+        <section>
+
+            <h2>Employment Details</h2>
+
+            <p><strong>Date of Joining :</strong> <span id="doj">--</span></p>
+
+            <p><strong>Designation :</strong> <span id="designation">--</span></p>
+
+            <p><strong>Designation Code :</strong> <span id="designationCode">--</span></p>
+
+            <p><strong>Bill Unit :</strong> <span id="billUnit">--</span></p>
+
+            <p><strong>PC7 Level :</strong> <span id="pc7Level">--</span></p>
+
+            <p><strong>PC7 Pay :</strong> <span id="pc7Pay">--</span></p>
+
+            <p><strong>Retirement Date :</strong> <span id="retirementDate">--</span></p>
+
+        </section>
+
+        <hr>
+
+        <!-- Bank -->
+
+        <section>
+
+            <h2>Bank Details</h2>
+
+            <p><strong>Bank Name :</strong> <span id="bankName">--</span></p>
+
+            <p><strong>Account Number :</strong> <span id="accountNumber">--</span></p>
+
+            <p><strong>IFSC Code :</strong> <span id="ifsc">--</span></p>
+
+        </section>
+
+        <hr>
+
+        <!-- History -->
+
+        <section>
+
+            <h2>Service History</h2>
+
+            <table>
+
+                <thead>
+
+                <tr>
+
+                    <th>Date</th>
+
+                    <th>Event</th>
+
+                    <th>Old Value</th>
+
+                    <th>New Value</th>
+
+                    <th>Remarks</th>
+
+                </tr>
+
+                </thead>
+
+                <tbody id="historyTable">
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </div>
+
+</div>
+<script src="/js/employee-details.js"></script>
+</body>
+
+</html>

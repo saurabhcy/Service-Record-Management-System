@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Service Record</title>
+
+    <link rel="stylesheet" href="/css/dashboard.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="sidebar">
+
+<div class="logo">
+
+<h2>RailHR</h2>
+
+<p>Northern Railway</p>
+
+</div>
+
+<ul>
+
+<li><a href="/pages/hr-dashboard.html">Dashboard</a></li>
+
+<li><a href="/pages/employees.html">Employees</a></li>
+
+<li><a href="/pages/service-record.html">Service Record</a></li>
+
+<li>Salary Management</li>
+
+<li>Leave Management</li>
+
+<li>New Onboarding</li>
+
+<li>Logout</li>
+
+</ul>
+
+</div>
+
+<div class="main">
+
+<div class="top">
+
+<h1>Service Record</h1>
+
+</div>
+
+<div class="search-box">
+
+<select id="searchType">
+
+<option value="name">Employee Name</option>
+
+<option value="employeeId">Employee ID</option>
+
+<option value="billUnit">Bill Unit</option>
+
+</select>
+
+<input
+type="text"
+id="searchValue"
+placeholder="Search Employee">
+
+<button id="searchBtn">
+
+Search
+
+</button>
+
+</div>
+
+<hr>
+
+<h2>Employee Information</h2>
+
+<p>
+
+<b>Name :</b>
+
+<span id="employeeName">--</span>
+
+</p>
+
+<p>
+
+<b>Employee ID :</b>
+
+<span id="employeeId">--</span>
+
+</p>
+
+<p>
+
+<b>Designation :</b>
+
+<span id="designation">--</span>
+
+</p>
+
+<p>
+
+<b>Bill Unit :</b>
+
+<span id="billUnit">--</span>
+
+</p>
+
+<p>
+
+<b>Status :</b>
+
+<span id="status">--</span>
+
+</p>
+
+<hr>
+
+<h2>Service History</h2>
+
+<table border="1" width="100%" cellpadding="10">
+
+<thead>
+
+<tr>
+
+<th>Date</th>
+
+<th>Field</th>
+
+<th>Old Value</th>
+
+<th>New Value</th>
+
+<th>Reason</th>
+
+</tr>
+
+</thead>
+
+<tbody id="historyTable">
+
+</tbody>
+
+</table>
+
+<br>
+
+<button id="promotionBtn">
+
+Add Promotion
+
+</button>
+
+<button id="transferBtn">
+
+Transfer Employee
+
+</button>
+
+<button id="statusBtn">
+
+Change Status
+
+</button>
+
+</div>
+
+</div>
+
+<script src="/js/service-record.js"></script>
+
+</body>
+
+</html>

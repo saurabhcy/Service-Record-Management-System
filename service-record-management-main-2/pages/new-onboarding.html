@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>New Employee Onboarding</title>
+
+    <link rel="stylesheet" href="/css/dashboard.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+
+    <div class="sidebar">
+
+        <div class="logo">
+            <h2>RailHR</h2>
+            <p>Northern Railway</p>
+        </div>
+
+        <ul>
+            <li><a href="/pages/hr-dashboard.html">Dashboard</a></li>
+            <li><a href="/pages/employees.html">Employees</a></li>
+            <li><a href="/pages/service-record.html">Service Records</a></li>
+            <li><a href="/pages/salary.html">Salary Management</a></li>
+            <li>Leave Management</li>
+            <li>Promotions</li>
+            <li><b>New Onboarding</b></li>
+            <li>Logout</li>
+        </ul>
+
+    </div>
+
+
+    <!-- Main Content -->
+
+    <div class="main">
+
+        <div class="top">
+
+            <h1>New Employee Onboarding</h1>
+
+        </div>
+
+        <form id="onboardingForm">
+
+            <!-- Personal Details -->
+
+            <h2>Personal Details</h2>
+
+            <table>
+
+                <tr>
+
+                    <td>Employee Name</td>
+
+                    <td>
+                        <input type="text"
+                               id="employeeName"
+                               name="employeeName"
+                               required>
+                    </td>
+
+                    <td>Gender</td>
+
+                    <td>
+
+                        <select id="gender" name="gender">
+
+                            <option value="">Select</option>
+
+                            <option>Male</option>
+
+                            <option>Female</option>
+
+                            <option>Other</option>
+
+                        </select>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Date of Birth</td>
+
+                    <td>
+
+                        <input type="date"
+                               id="dob"
+                               name="dob">
+
+                    </td>
+
+                    <td>Employee Type</td>
+
+                    <td>
+
+                        <select id="employeeType"
+                                name="employeeType">
+
+                            <option>PF</option>
+
+                            <option>NPS</option>
+
+                        </select>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>PAN Number</td>
+
+                    <td>
+
+                        <input type="text"
+                               id="panNumber"
+                               name="panNumber">
+
+                    </td>
+
+                    <td>Aadhaar Number</td>
+
+                    <td>
+
+                        <input type="text"
+                               id="aadhaarNumber"
+                               name="aadhaarNumber">
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Mobile Number</td>
+
+                    <td>
+
+                        <input type="text"
+                               id="mobileNumber"
+                               name="mobileNumber">
+
+                    </td>
+
+                    <td>Email ID</td>
+
+                    <td>
+
+                        <input type="email"
+                               id="email"
+                               name="email">
+
+                    </td>
+
+                </tr>
+
+            </table>
+
+            <br>
+
+            <!-- Employment Details -->
+
+            <h2>Employment Details</h2>
+
+            <table>
+
+                <tr>
+
+                    <td>Bill Unit</td>
+
+                    <td>
+
+                        <input type="text"
+                               id="billUnit"
+                               name="billUnit">
+
+                    </td>
+
+                    <td>Employee ID</td>
+
+                    <td>
+
+                        <input type="text"
+                               id="employeeId"
+                               name="employeeId"
+                               readonly>
+
+                        <button
+                            type="button"
+                            id="generateEmployeeId">
+
+                            Generate Employee ID
+
+                        </button>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Date of Joining</td>
+
+                    <td>
+
+                        <input type="date"
+                               id="dateOfJoining"
+                               name="dateOfJoining">
+
+                    </td>
+
+                    <td>Status</td>
+
+                    <td>
+
+                        <select
+                            id="status"
+                            name="status">
+
+                            <option>Active</option>
+
+                            <option>Transferred</option>
+
+                            <option>Suspended</option>
+
+                            <option>Retired</option>
+
+                            <option>Resigned</option>
+
+                        </select>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Designation</td>
+
+                    <td>
+
+                        <input type="text"
+                               id="designation"
+                               name="designation">
+
+                    </td>
+
+                    <td>Designation Code</td>
+
+                    <td>
+
+                        <input type="text"
+                               id="designationCode"
+                               name="designationCode">
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Pay Level</td>
+
+                    <td>
+
+                        <select
+                            id="payLevel"
+                            name="payLevel">
+
+                            <option value="">Select Level</option>
+
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+
+                        </select>
+
+                    </td>
+
+                    <td>Pay Cell</td>
+
+                    <td>
+
+                        <select
+                            id="payCell"
+                            name="payCell">
+
+                            <option value="">Select Cell</option>
+
+                        </select>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Basic Pay</td>
+
+                    <td>
+
+                        <input type="text"
+                               id="basicPay"
+                               name="basicPay"
+                               readonly>
+
+                    </td>
+
+                    <td>Retirement Date</td>
+
+                    <td>
+
+                        <input
+                            type="date"
+                            id="retirementDate"
+                            name="retirementDate"
+                            readonly>
+
+                    </td>
+
+                </tr>
+
+            </table>
+
+            <br>
+
+            <!-- Bank Details -->
+
+            <h2>Bank Details</h2>
+
+            <table>
+
+                <tr>
+
+                    <td>Bank Name</td>
+
+                    <td>
+
+                        <input
+                            type="text"
+                            id="bankName"
+                            name="bankName">
+
+                    </td>
+
+                    <td>Account Number</td>
+
+                    <td>
+
+                        <input
+                            type="text"
+                            id="accountNumber"
+                            name="accountNumber">
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>IFSC Code</td>
+
+                    <td>
+
+                        <input
+                            type="text"
+                            id="ifscCode"
+                            name="ifscCode">
+
+                    </td>
+
+                </tr>
+
+            </table>
+
+            <br>
+
+            <button type="submit">
+
+                Save Employee
+
+            </button>
+
+            <button type="reset">
+
+                Reset
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="/js/new-onboarding.js"></script>
+
+</body>
+</html>
